@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "fdcb2533-0702-4f01-b730-7c529e05e8a1",
+		"name": "DynamicJson",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23288095"
+	},
+	"item": [
+		{
+			"name": "GetReq",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{mainUrl}}",
+					"host": [
+						"{{mainUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostReq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"{{$randomJobTitle}}\",\r\n    \"author\": \"{{$randomUserName}}\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mainUrl}}",
+					"host": [
+						"{{mainUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutReq",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Software Quality Assurer\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mainUrl}}/4",
+					"host": [
+						"{{mainUrl}}"
+					],
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PatchReq",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\": \"Ifty Rasheed\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{mainUrl}}/4",
+					"host": [
+						"{{mainUrl}}"
+					],
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DelReq",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{mainUrl}}/4",
+					"host": [
+						"{{mainUrl}}"
+					],
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
